@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vaccinet</title>
+    <script src="jquery-3.2.1.js"></script>
+    <script src="custom.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui-1.12.1.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+</head>
+<style>
+
+    body {
+        background-image: url("Images/background2.png");
+        background-color: #cccccc;
+        background-size: 100vw 100vh;
+        /*background-size:cover;
+        background-position: center bottom;*/
+    }
+
+    .h1{
+        position: absolute;
+        left: 50%;
+
+    }
+
+    .container{
+        background-color: #868e96;
+        opacity: 50;
+    }
+
+    .span12 {
+        border-radius: 25px;
+        background: rgb(255, 255, 255); /* Fall-back for browsers that don't
+                                    support rgba */
+        background: rgba(255, 255, 255, .75);
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .spanContent{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    #Title {
+        position: absolute;
+        Top: 20%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    tr{
+        height : 50px;
+    }
+
+    .divider{
+        width:5px;
+        height:auto;
+        display:inline-block;
+    }
+
+</style>
+
+<body>
+<div id="content"> </div>
+<div class="container" >
+    <div id="Title">
+    </div>
+    <div class="span12">
+        <div class = "spanContent">
+            <h3 id="Welcome"> Welcome dear Customer...</h3>
+            <br>
+            <table style="width:100%">
+                <tr>
+                    <td style="width:40%"><span id="balanceText">Current Balance</span></td>
+                    <td><span id="myBalance">0 Healthcoins</span></td>
+                </tr>
+                <tr>
+                    <td><span id ="OperationText"> Register for Vaccination </span></td>
+                    <td><input class="form-control" id="addressHospital" placeholder="Please Enter Hospital address">
+                </tr>
+                <tr>
+                    <td> </td>
+                    <td><button class="btn btn-primary" id="registerbtn">Register</button></td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <div style="text-align: center;">
+                <button type="button" id="confirmVacc" class="btn btn-primary btn-lg">Confirm Vaccination</button>
+                <div class="divider"> </div>
+                <button type="button" id="buyService" class="btn btn-primary btn-lg">Buy Service</button>
+                <div class="divider"> </div>
+                <button type="button" id ="Donate" class="btn btn-success btn-lg">Donate</button>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div id="dialog-form" title="Contract">
+        <form>
+            <fieldset>
+                <label for="customer">From:</label>
+                <input type="text" name="from" id="customer" class="form-control" readonly>
+                <label for="Service">To:</label>
+                <input type="text" name="to" id="Service" class="form-control" placeholder="Please Enter Service Provider Adress">
+                <label for="amount">Amount:</label>
+                <input type="text" name="amount" id="amount"  class="form-control">
+                <label for="comment">Details:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+            </fieldset>
+        </form>
+    </div>
+
+
+
+</div>
+
+</body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
